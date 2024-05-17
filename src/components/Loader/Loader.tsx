@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 import { RotatingLines } from "react-loader-spinner";
 
 const Loader = (): ReactElement => {
