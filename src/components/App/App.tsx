@@ -12,14 +12,14 @@ import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import { HandleSearchBarSubmitFunction, VoidFunction } from "../types";
 
 function App() {
-  const [query, setQuery] = useState("");
-  const [images, setImages] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-  const [modal, setModal] = useState("");
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
+  const [query, setQuery] = useState<string>("");
+  const [images, setImages] = useState<[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+  const [modal, setModal] = useState<string>("");
+  const [isModalOpen, setModalOpen] = useState<boolean>(false);
+  const [page, setPage] = useState<number>(1);
+  const [totalPages, setTotalPages] = useState<number>(0);
 
   useEffect(() => {
     const handleSearch = async () => {

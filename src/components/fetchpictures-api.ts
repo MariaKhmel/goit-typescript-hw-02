@@ -1,5 +1,12 @@
 import axios from "axios";
-const key = "UkUvtFMmD5oVuyg6VqxNecHCXdBh4jU0Efit5U6Q764";
+const key: Key = "UkUvtFMmD5oVuyg6VqxNecHCXdBh4jU0Efit5U6Q764";
+
+type Key = string;
+type Params = {
+  params: {
+    client_id: Key;
+  };
+};
 const params = {
   params: {
     client_id: key,
