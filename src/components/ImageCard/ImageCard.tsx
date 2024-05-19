@@ -1,13 +1,10 @@
 import React from "react";
 import css from "./ImageCard.module.css";
-import { OpenModal } from "../types";
+import { OpenModal, Urls } from "../types";
 
 type ImageCardProps = {
   description: string;
-  urls: {
-    regular: string;
-    small: string;
-  };
+  urls: Urls;
   openModal: OpenModal;
 };
 

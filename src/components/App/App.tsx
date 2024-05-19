@@ -9,11 +9,15 @@ import ImageModal from "../ImageModal/ImageModal";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
-import { HandleSearchBarSubmitFunction, VoidFunction } from "../types";
+import {
+  HandleSearchBarSubmitFunction,
+  ImagesType,
+  VoidFunction,
+} from "../types";
 
 function App() {
   const [query, setQuery] = useState<string>("");
-  const [images, setImages] = useState<[]>([]);
+  const [images, setImages] = useState<ImagesType>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [modal, setModal] = useState<string>("");
